@@ -1,14 +1,21 @@
 class Celula {
-    constructor(estaViva, estaMuerta) {
-        this.estaViva = estaViva;
-        this.estaMuerta = estaMuerta;
-    }
-
+  constructor(estaViva, estaMuerta) {
+    this.estaViva = estaViva;
+    this.estaMuerta = estaMuerta;
+  }
 }
 
 function createMatriz() {
-    
+  let c = 8;
+  let r = 4;
+  const matrix = [];
+  for (let i = 0; i < r; i++) {
+    matrix[i] = new Array(c);
+  }
+  console.log(matrix);
 }
+
+console.log(createMatriz());
 
 /* Nuevo requerimiento
 En esta ocasión  tu implementación deberá estar completamente orientada a objetos:
